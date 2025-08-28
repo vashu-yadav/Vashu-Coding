@@ -1,22 +1,12 @@
 //write a program to input two numbers and display their sum.
 
-#include<stdio.h>
-int main() {
-    int a, b;
-    printf("Enter a: ");
-    scanf("%d", &a);
+#include <stdio.h>
 
-    printf("Enter b: ");
-    scanf("%d", &b);
-
-    if ( b  == 0){
-        printf("error  : division by zero is not allowed in c \n");
-
-    }
-    else {
-        printf(" divison is %d \n", a/b);
-        
-    }
+int main(){
+    int a,b;
+    printf(" enter two numbers : \n");
+    scanf("%d %d", &a ,&b);
+    printf("sum of two numebers id : %d \n", a+b);
 
     return 0;
 }
