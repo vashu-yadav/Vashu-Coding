@@ -3,10 +3,15 @@
 #include <stdio.h>
 
 int main(){
-    int a,b;
-    printf(" enter two numbers : \n");
-    scanf("%d %d", &a ,&b);
-    printf("sum of two numebers id : %d \n", a+b);
+    float a,b;
+    printf("enter two numbers : ");
+    scanf("%f %f", &a,&b);
 
+    if (b == 0){
+        printf(" second value cannot be zero");
+    }
+    else {
+        printf(" sum is %.2f \n difference is %.2f \n product is %.2f \n quotient is %.2f \n",a+b , a-b , a*b , a/b );
+    }
     return 0;
 }
