@@ -9,14 +9,7 @@ int main() {
     printf("Enter b: ");
     scanf("%d", &b);
 
-    if ( b  == 0){
-        printf("error  : division by zero is not allowed in c \n");
-
-    }
-    else {
-        printf(" divison is %d \n", a/b);
-        
-    }
+    prinf(" %d", a+b);
 
     return 0;
 }
