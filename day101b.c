@@ -1,0 +1,21 @@
+
+#include <stdio.h>
+
+enum Status {
+    SUCCESS,
+    FAILURE,
+    TIMEOUT
+};
+
+int main() {
+    enum Status s = FAILURE;
+
+    if (s == SUCCESS)
+        printf("Operation succeeded.\n");
+    else if (s == FAILURE)
+        printf("Operation failed.\n");
+    else if (s == TIMEOUT)
+        printf("Operation timed out.\n");
+
+    return 0;
+}
